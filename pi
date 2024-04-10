@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+    real h, pi
+    inteiro s
+    
+
+    escreva ("Digite 1 para masculino ou 2 para feminino: ")
+    leia (s)
+
+    se (s > 2 ou s < 1) {
+      escreva (" Você preencheu as informações incorretamente")
+    }
+    senao {
+
+    escreva ("Digite sua altura: ")
+    leia (h)
+
+    se (s == 1) {
+      pi = (72.7 * h) - 58
+      escreva ("O peso ideal para a sua altura é: ", pi)
+    }
+    se (s == 2) {
+      pi = (62.1 * h) - 44.7
+      escreva ("O peso ideal para a sua altura é: ", pi)
+    }
+    
+    }
+  }
+}
