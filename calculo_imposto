@@ -1,0 +1,28 @@
+programa
+{
+	funcao inicio ()
+	{
+		
+		real sal, imp  
+		caracter condic
+		escreva ("\n")
+		escreva ("Informe o valor do salário: ")
+		leia (sal)
+		se (sal>2326.01)
+		condic = 'c'
+		senao
+		se (sal <= 1164)
+		condic ='a'
+		senao
+		condic = 'b'
+		escolha (condic) {
+			caso 'a':
+			imp=0
+			caso 'b': 
+			imp = sal*0.15
+			caso 'c':
+			imp = sal*0.275
+		}
+		escreva ("valor do imposto de renda: ", imp)
+		}
+	}
